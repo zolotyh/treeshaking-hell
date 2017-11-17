@@ -1,10 +1,4 @@
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
-
 module.exports = {
-  entry: './src/index.js',
-  output: {
-    filename: 'webpack.output.js',
-  },
   module: {
     rules: [
       {

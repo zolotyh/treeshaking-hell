@@ -1,5 +1,4 @@
 import {Wheel} from './module.js';
-//import {cube} from './lib.js';
 
 class Car {
   constructor() {
@@ -9,5 +8,3 @@ class Car {
 
 const car = new Car();
 car.wheel.pump();
-
-//console.log(cube(10));
