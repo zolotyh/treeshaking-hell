@@ -80,12 +80,26 @@ console.log(Object(__WEBPACK_IMPORTED_MODULE_0__lib_js__["a" /* cube */])(10));
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return cube; });
+/* unused harmony export square */
+/* unused harmony export TestClass */
 var square = function square(x) {
   return x * x;
 };
 var cube = function cube(x) {
   return x * x * x;
 };
+
+var TestClass = function () {
+  function TestClass() {
+    babelHelpers.classCallCheck(this, TestClass);
+  }
+
+  TestClass.prototype.print = function print() {
+    console.log('Sit iusto quia amet fugiat non nihil enim. Blanditiis aperiam cum quo similique atque tempore aliquam aliquam dignissimos quaerat saepe cumque iste! Corrupti modi incidunt enim blanditiis id voluptatem modi.');
+  };
+
+  return TestClass;
+}();
 
 
 
