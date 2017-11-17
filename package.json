@@ -3,19 +3,19 @@
   "version": "1.0.0",
   "main": "./src/index.js",
   "scripts": {
-    "start": "webpack src/index.js out.dev.js",
-    "prod": "webpack --optimize-minimize src/index.js out.prod.js"
+    "start":
+      "rollup -c --input src/index.js --output.file out.dev.js --output.format iife"
   },
   "keywords": [],
   "author": "Alexey Zolotyh (aazolotyh@gmail.com)",
   "license": "ISC",
-  "devDependencies": {
+  "devDependencies": {},
+  "description": "Webpack build demo",
+  "dependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-plugin-external-helpers": "^6.22.0",
     "babel-preset-es2015": "^6.24.1",
-    "webpack": "^3.8.1"
-  },
-  "description": "Webpack build demo"
+    "rollup": "^0.51.7",
+    "rollup-plugin-babel": "^3.0.2"
+  }
 }
