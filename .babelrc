@@ -1,8 +1,10 @@
 {
   "presets": [
-    ["@babel/preset-env", {
-      "modules": false,
-      "useBuiltIns": "entry"
-    }]
+    [
+      "es2015", { "modules": false, loose: true }
+    ]
+  ],
+  "plugins": [
+    "external-helpers"
   ]
 }

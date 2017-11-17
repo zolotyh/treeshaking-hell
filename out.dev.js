@@ -70,12 +70,10 @@
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__module_js__ = __webpack_require__(1);
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
 
 
 var Car = function Car() {
-  _classCallCheck(this, Car);
+  babelHelpers.classCallCheck(this, Car);
 
   this.wheel = new __WEBPACK_IMPORTED_MODULE_0__module_js__["a" /* Wheel */]();
 };
@@ -90,42 +88,26 @@ car.wheel.pump();
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Wheel; });
 /* unused harmony export Rudder */
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-var Wheel =
-/*#__PURE__*/
-function () {
+var Wheel = function () {
   function Wheel() {
-    _classCallCheck(this, Wheel);
+    babelHelpers.classCallCheck(this, Wheel);
   }
 
-  _createClass(Wheel, [{
-    key: "pump",
-    value: function pump() {
-      console.log('puuuuf');
-    }
-  }]);
+  Wheel.prototype.pump = function pump() {
+    console.log('puuuuf');
+  };
 
   return Wheel;
 }();
 
-var Rudder =
-/*#__PURE__*/
-function () {
+var Rudder = function () {
   function Rudder() {
-    _classCallCheck(this, Rudder);
+    babelHelpers.classCallCheck(this, Rudder);
   }
 
-  _createClass(Rudder, [{
-    key: "turn",
-    value: function turn() {
-      console.log('turn');
-    }
-  }]);
+  Rudder.prototype.turn = function turn() {
+    console.log('turn');
+  };
 
   return Rudder;
 }();
