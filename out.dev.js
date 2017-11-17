@@ -79,15 +79,15 @@ console.log(Object(__WEBPACK_IMPORTED_MODULE_0__lib_js__["a" /* cube */])(10));
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* unused harmony export square */
-/* harmony export (immutable) */ __webpack_exports__["a"] = cube;
-function square(x) {
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return cube; });
+var square = function square(x) {
   return x * x;
-}
-
-function cube(x) {
+};
+var cube = function cube(x) {
   return x * x * x;
-}
+};
+
+
 
 /***/ })
 /******/ ]);

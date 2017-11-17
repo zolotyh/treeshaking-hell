@@ -1,7 +1,4 @@
-export function square(x) {
-  return x * x;
-}
+const square = x => x * x;
+const cube = x => x * x * x;
 
-export function cube(x) {
-  return x * x * x;
-}
+export {cube};
