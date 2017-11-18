@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "./src/index.js",
   "scripts": {
-    "start": "webpack src/index.js out.dev.js",
-    "prod": "webpack --optimize-minimize src/index.js out.prod.js"
+    "start": "yarn &&  webpack src/index.js out.dev.js",
+    "prod": "yarn && webpack --optimize-minimize src/index.js out.prod.js"
   },
   "keywords": [],
   "author": "Alexey Zolotyh (aazolotyh@gmail.com)",
@@ -15,7 +15,8 @@
     "babel-loader": "^7.1.2",
     "babel-plugin-external-helpers": "^6.22.0",
     "babel-preset-es2015": "^6.24.1",
-    "webpack": "^3.8.1"
+    "webpack": "^3.8.1",
+    "yarn": "^1.3.2"
   },
   "description": "Webpack build demo"
 }
