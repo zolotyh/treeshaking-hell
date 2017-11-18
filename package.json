@@ -4,14 +4,16 @@
   "main": "./src/index.js",
   "scripts": {
     "start":
-      "java -jar node_modules/google-closure-compiler/compiler.jar --compilation_level ADVANCED --language_in=ES6 --js ./src/index.js ./src/module.js > out.prod.js"
+      "yarn && java -jar node_modules/google-closure-compiler/compiler.jar --compilation_level ADVANCED --language_in=ES6 --js ./src/index.js ./src/module.js > out.dev.js",
+    "prod":
+      "yarn && java -jar node_modules/google-closure-compiler/compiler.jar --compilation_level ADVANCED --language_in=ES6 --js ./src/index.js ./src/module.js > out.prod.js"
   },
   "keywords": [],
   "author": "Alexey Zolotyh (aazolotyh@gmail.com)",
   "license": "ISC",
-  "devDependencies": {},
-  "description": "Webpack build demo",
-  "dependencies": {
-    "google-closure-compiler": "^20171112.0.0"
-  }
+  "devDependencies": {
+    "google-closure-compiler": "^20171112.0.0",
+    "yarn": "^1.3.2"
+  },
+  "description": "Webpack build demo"
 }
