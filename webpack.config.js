@@ -1,13 +1,8 @@
 module.exports = {
   module: {
     rules: [
-      {
-        test: /\.js$/,
-        exclude: /(node_modules|bower_components)/,
-        use: {
-          loader: 'babel-loader',
-        },
-      },
+      // all files with a `.ts` or `.tsx` extension will be handled by `ts-loader`
+      {test: /\.js/, loader: 'ts-loader'},
     ],
   },
 };

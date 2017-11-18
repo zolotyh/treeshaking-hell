@@ -71,15 +71,15 @@
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__module_js__ = __webpack_require__(1);
 
-
-var Car = function Car() {
-  babelHelpers.classCallCheck(this, Car);
-
-  this.wheel = new __WEBPACK_IMPORTED_MODULE_0__module_js__["a" /* Wheel */]();
-};
-
+var Car = /** @class */ (function () {
+    function Car() {
+        this.wheel = new __WEBPACK_IMPORTED_MODULE_0__module_js__["a" /* Wheel */]();
+    }
+    return Car;
+}());
 var car = new Car();
 car.wheel.pump();
+
 
 /***/ }),
 /* 1 */
@@ -88,29 +88,22 @@ car.wheel.pump();
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Wheel; });
 /* unused harmony export Rudder */
-var Wheel = function () {
-  function Wheel() {
-    babelHelpers.classCallCheck(this, Wheel);
-  }
-
-  Wheel.prototype.pump = function pump() {
-    console.log('puuuuf');
-  };
-
-  return Wheel;
-}();
-
-var Rudder = function () {
-  function Rudder() {
-    babelHelpers.classCallCheck(this, Rudder);
-  }
-
-  Rudder.prototype.turn = function turn() {
-    console.log('turn');
-  };
-
-  return Rudder;
-}();
+var Wheel = /** @class */ (function () {
+    function Wheel() {
+    }
+    Wheel.prototype.pump = function () {
+        console.log('puuuuf');
+    };
+    return Wheel;
+}());
+var Rudder = /** @class */ (function () {
+    function Rudder() {
+    }
+    Rudder.prototype.turn = function () {
+        console.log('turn');
+    };
+    return Rudder;
+}());
 
 
 

@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "sourceMap": true,
+    "module": "ES6"
+  },
+  "include": ["**/*"]
+}
