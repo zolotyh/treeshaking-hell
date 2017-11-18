@@ -30,7 +30,7 @@ index.js file exports and use only cube function().When you run level build (`ya
 В терминале введите `npm run prod`  или  `yarn run prod`
 Результат -  out.prod.js
 
-## Смысл экспиремента
+## Смысл эксперимента
 
 Файл ./src/lib.js содержит:
 * 2 математические функции  – cube(x) и square(x)
