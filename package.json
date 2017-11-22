@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "./src/index.js",
   "scripts": {
-    "start": "webpack src/index.js out.dev.js"
+    "start": "webpack --optimize-minimize src/index.js out.dev.js"
   },
   "keywords": [],
   "author": "Alexey Zolotyh (aazolotyh@gmail.com)",
