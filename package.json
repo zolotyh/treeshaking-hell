@@ -4,7 +4,12 @@
   "main": "./src/index.js",
   "scripts": {
     "start": "yarn && webpack src/index.js out.dev.js",
-    "prod": "yarn && webpack --optimize-minimize src/index.js out.prod.js"
+    "babel": "babel -o babel.out.js  uglify.out.js",
+    "uglify":
+      "node_modules/uglify-es/bin/uglifyjs --compress -o uglify.out.js out.dev.js",
+    "uglify2": "uglifyjs -o prod.out.js  babel.out.js",
+    "prod":
+      " yarn start && yarn run uglify && yarn run babel && yarn run uglify2"
   },
   "keywords": [],
   "author": "Alexey Zolotyh (aazolotyh@gmail.com)",
@@ -12,14 +17,11 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
     "babel-plugin-external-helpers": "^6.22.0",
     "babel-preset-es2015": "^6.24.1",
     "uglify-es": "^3.1.9",
     "webpack": "^3.8.1",
-    "yarn": "^1.3.2",
-    "ts-loader": "^3.1.1",
-    "typescript": "^2.6.1"
+    "yarn": "^1.3.2"
   },
   "description": "Webpack build demo"
 }

@@ -71,15 +71,14 @@
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__module_js__ = __webpack_require__(1);
 
-var Car = 
- /*#__PURE__*/ 
- (function () {
-    function Car() {
-        this.wheel = new __WEBPACK_IMPORTED_MODULE_0__module_js__["a" /* Wheel */]();
-    }
-    return Car;
-}());
-var car = new Car();
+
+class Car {
+  constructor() {
+    this.wheel = new __WEBPACK_IMPORTED_MODULE_0__module_js__["a" /* Wheel */]();
+  }
+}
+
+const car = new Car();
 car.wheel.pump();
 
 
@@ -90,26 +89,18 @@ car.wheel.pump();
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Wheel; });
 /* unused harmony export Rudder */
-var Wheel = 
- /*#__PURE__*/ 
- (function () {
-    function Wheel() {
-    }
-    Wheel.prototype.pump = function () {
-        console.log('puuuuf');
-    };
-    return Wheel;
-}());
-var Rudder = 
- /*#__PURE__*/ 
- (function () {
-    function Rudder() {
-    }
-    Rudder.prototype.turn = function () {
-        console.log('turn');
-    };
-    return Rudder;
-}());
+class Wheel {
+  pump(){
+    console.log('puuuuf');
+  }
+}
+
+class Rudder {
+  turn(){
+    console.log('turn');
+  }
+}
+
 
 
 
