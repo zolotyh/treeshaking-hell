@@ -1,13 +1,5 @@
+const ClosureCompilerPlugin = require('closure-webpack-plugin');
+
 module.exports = {
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        exclude: /(node_modules|bower_components)/,
-        use: {
-          loader: 'babel-loader',
-        },
-      },
-    ],
-  },
+  plugins: [new ClosureCompilerPlugin({mode: 'AGGRESSIVE_BUNDLE'})],
 };
